@@ -1,0 +1,48 @@
+[project]
+site_url = "https://jbeteta-ies.github.io/UF0323/"
+site_name = "UF0323 · Aplicaciones informáticas para presentaciones"
+site_description = "Documentación autónoma de la unidad formativa UF0323."
+site_author = "jbeteta-ies"
+
+nav = [
+  { "Inicio" = "index.md" },
+  { "Documentación del repositorio" = "README.md" },
+  { "Mapa del curso" = "mapa-del-curso.md" },
+  { "Sesiones" = [
+    { "Sesión 01 · Disponible" = "sesiones/sesion-01.md" },
+    { "Sesión 02 · Disponible" = "sesiones/sesion-02.md" },
+    { "Sesión 03 · Disponible" = "sesiones/sesion-03.md" },
+    { "Sesión 04 · Disponible" = "sesiones/sesion-04.md" },
+    { "Sesión 05 · Pendiente" = "sesiones/sesion-05.md" },
+    { "Sesión 06 · Pendiente" = "sesiones/sesion-06.md" },
+    { "Sesión 07 · Pendiente" = "sesiones/sesion-07.md" },
+  ] },
+  { "Guiones" = "guiones/plantilla-sesion-uf0323.md" },
+  { "Actividades" = "actividades/plantilla-ejercicio-uf0323.md" },
+  { "Evaluación" = [
+    { "Estado de la evaluación" = "evaluacion/index.md" },
+    { "Examen final" = "evaluacion/examen-final.md" },
+  ] },
+  { "Recursos" = "recursos/index.md" },
+]
+
+[project.theme]
+language = "es"
+features = [
+  "navigation.sections",
+  "navigation.indexes",
+  "navigation.path",
+  "navigation.top",
+  "search.highlight",
+]
+
+[project.markdown_extensions]
+admonition = {}
+pymdownx.details = {}
+
+[project.markdown_extensions.pymdownx.superfences]
+custom_fences = [{ name = "mermaid", class = "mermaid" }]
+
+[project.markdown_extensions.pymdownx.tabbed]
+alternate_style = true
+combine_header_slug = true
